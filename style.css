@@ -318,7 +318,7 @@ ul {
   list-style-type: none; }
 
 .header-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/bgc_header.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/bgc_header.png");
   font-size: 1.125rem;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -338,28 +338,28 @@ ul {
         font-weight: 500; }
       .header-container .header .header-navbar .header-navbar__nav {
         display: flex; }
-        .header-container .header .header-navbar .header-navbar__nav .header-navbar__li .header-navbar__link {
+        .header-container .header .header-navbar .header-navbar__nav .header-navbar__link {
           padding: 5px 27px;
           color: #fff;
           transition: 0.2s; }
-          .header-container .header .header-navbar .header-navbar__nav .header-navbar__li .header-navbar__link:hover {
+          .header-container .header .header-navbar .header-navbar__nav .header-navbar__link:hover {
             color: #aaa; }
-        .header-container .header .header-navbar .header-navbar__nav .header-navbar__li .header-navbar__link--margin {
+        .header-container .header .header-navbar .header-navbar__nav .header-navbar__link--margin {
           padding-right: 40px; }
-        .header-container .header .header-navbar .header-navbar__nav .header-login {
-          display: flex; }
-          .header-container .header .header-navbar .header-navbar__nav .header-login .header-login__li .header-login__login {
-            padding: 3px 41px;
-            color: #fff;
-            border-left: 1px solid white; }
-          .header-container .header .header-navbar .header-navbar__nav .header-login .header-login__li .header-login__register {
-            padding: 10px 24px;
-            color: #fff;
-            border: 1px solid white;
-            border-radius: 5px; }
-            .header-container .header .header-navbar .header-navbar__nav .header-login .header-login__li .header-login__register:hover {
-              border-color: #3885e5;
-              background-color: #3885e5; }
+      .header-container .header .header-navbar .header-login {
+        display: flex; }
+        .header-container .header .header-navbar .header-login .header-login__login {
+          padding: 3px 41px;
+          color: #fff;
+          border-left: 1px solid white; }
+        .header-container .header .header-navbar .header-login .header-login__register {
+          padding: 10px 24px;
+          color: #fff;
+          border: 1px solid white;
+          border-radius: 5px; }
+          .header-container .header .header-navbar .header-login .header-login__register:hover {
+            border-color: #3885e5;
+            background-color: #3885e5; }
     .header-container .header .header-home {
       margin-top: 282px;
       text-align: center; }

@@ -4,7 +4,7 @@
 
 .header-container {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/img/bgc_header.png");
+    url("img/bgc_header.png");
   font-size: 1.125rem;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -30,41 +30,39 @@
       .header-navbar__nav {
         display: flex;
 
-          .header-navbar__link {
-            padding: 5px 27px;
-            color: #fff;
-            transition: 0.2s;
+        .header-navbar__link {
+          padding: 5px 27px;
+          color: #fff;
+          transition: 0.2s;
 
-            &:hover {
-              color: #aaa;
-            }
-          }
-
-          .header-navbar__link--margin {
-            padding-right: 40px;
+          &:hover {
+            color: #aaa;
           }
         }
 
-        .header-login {
-          display: flex;
+        .header-navbar__link--margin {
+          padding-right: 40px;
+        }
+      }
 
-            .header-login__login {
-              padding: 3px 41px;
-              color: #fff;
-              border-left: 1px solid white;
-            }
+      .header-login {
+        display: flex;
 
-            .header-login__register {
-              padding: 10px 24px;
-              color: #fff;
-              border: 1px solid white;
-              border-radius: 5px;
+        .header-login__login {
+          padding: 3px 41px;
+          color: #fff;
+          border-left: 1px solid white;
+        }
 
-              &:hover {
-                border-color: #3885e5;
-                background-color: #3885e5;
-              }
-            }
+        .header-login__register {
+          padding: 10px 24px;
+          color: #fff;
+          border: 1px solid white;
+          border-radius: 5px;
+
+          &:hover {
+            border-color: #3885e5;
+            background-color: #3885e5;
           }
         }
       }
