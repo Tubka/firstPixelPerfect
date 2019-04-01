@@ -435,3 +435,14 @@ body {
         list-style-type: none;
         border: 1px solid black;
         border-radius: 4px; }
+  body .job {
+    padding-top: 70px;
+    color: #4f5660;
+    text-align: center; }
+    body .job .job__title {
+      font-weight: 500;
+      margin-bottom: 32px; }
+    body .job .job__description {
+      width: 970px;
+      margin: 0 auto;
+      line-height: 1.7; }

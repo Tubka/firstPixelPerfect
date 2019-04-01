@@ -188,4 +188,23 @@ body {
       }
     }
   }
+
+  .job {
+    padding-top: 70px;
+    color: #4f5660;
+    text-align: center;
+
+    .job__title {
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+
+    .job__description {
+      width: 970px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+  }
+
+
 }
