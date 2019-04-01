@@ -1,138 +1,190 @@
 @import "base/normalize";
 
 // font-family: 'Raleway', sans-serif;
-
-.header-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("img/bgc_header.png");
+body {
   font-size: 1.125rem;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #fff;
 
-  .header {
-    max-width: 1680px;
-    margin: 0 auto;
+  .header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("img/bgc_header.png");
+    font-weight: 300;
+    color: #fff;
 
-    .header-navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 25px;
+    .header {
+      max-width: 1680px;
+      margin: 0 auto;
 
-      .header-navbar__title {
-        margin: 0;
-        padding: 0;
-        font-size: 1.8125rem;
-        font-weight: 500;
-      }
-
-      .header-navbar__nav {
+      .header-navbar {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
 
-        .header-navbar__link {
-          padding: 5px 27px;
-          color: #fff;
-          transition: 0.2s;
+        .header-navbar__title {
+          margin: 0;
+          padding: 0;
+          font-size: 1.8125rem;
+          font-weight: 500;
+        }
 
-          &:hover {
-            color: #aaa;
+        .header-navbar__nav {
+          display: flex;
+
+          .header-navbar__link {
+            padding: 5px 27px;
+            color: #fff;
+            transition: 0.2s;
+
+            &:hover {
+              color: #aaa;
+            }
+          }
+
+          .header-navbar__link--margin {
+            padding-right: 40px;
           }
         }
 
-        .header-navbar__link--margin {
-          padding-right: 40px;
-        }
-      }
+        .header-login {
+          display: flex;
 
-      .header-login {
-        display: flex;
+          .header-login__login {
+            padding: 3px 41px;
+            color: #fff;
+            border-left: 1px solid white;
+          }
 
-        .header-login__login {
-          padding: 3px 41px;
-          color: #fff;
-          border-left: 1px solid white;
-        }
+          .header-login__register {
+            padding: 10px 24px;
+            color: #fff;
+            border: 1px solid white;
+            border-radius: 5px;
 
-        .header-login__register {
-          padding: 10px 24px;
-          color: #fff;
-          border: 1px solid white;
-          border-radius: 5px;
-
-          &:hover {
-            border-color: #3885e5;
-            background-color: #3885e5;
+            &:hover {
+              border-color: #3885e5;
+              background-color: #3885e5;
+            }
           }
         }
       }
-    }
 
-    .header-home {
-      margin-top: 282px;
-      text-align: center;
+      .header-home {
+        margin-top: 282px;
+        text-align: center;
 
-      .header-home__title {
-        margin: 0;
-        font-size: 3rem;
+        .header-home__title {
+          // letter-spacing: 0.8px;
+          margin: 0;
+          font-size: 3rem;
+        }
+
+        .header-home__description {
+          margin-top: 18px;
+          margin-bottom: 40px;
+        }
       }
 
-      .header-home__description {
-        margin-top: 18px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .header-home__input {
-      display: inline-block;
-      // padding: 8px;
-      background-color: #fff;
-      border-radius: 5px;
-
-      .header-home__search {
-        padding: 10px;
-        border: none;
-        //
-        padding: 0 137px 0 20px;
-      }
-
-      .header-home__icon {
-        color: #9d9fa1;
-      }
-
-      .header-home__select {
-        min-height: 60px;
-        margin-left: 16px;
-        padding: 0 73px 0 14px;
-        border: none;
-        border-left: 1px solid #9d9fa1;
-        border-right: 1px solid #9d9fa1;
-      }
-
-      .header-home__btn {
-        margin: 8px;
-        // margin-left: 11px;
-        padding: 12px 34px;
-        border: none;
+      .header-home__input {
+        display: inline-block;
+        // padding: 8px;
+        background-color: #fff;
         border-radius: 5px;
-        font-size: 18px;
-        font-weight: 500;
-        color: #fff;
-        background-color: #3885e5;
+
+        .header-home__search {
+          padding: 10px;
+          border: none;
+          //
+          padding: 0 137px 0 20px;
+        }
+
+        .header-home__icon {
+          color: #9d9fa1;
+        }
+
+        .header-home__select {
+          min-height: 60px;
+          margin-left: 16px;
+          padding: 0 73px 0 14px;
+          border: none;
+          border-left: 1px solid #9d9fa1;
+          border-right: 1px solid #9d9fa1;
+        }
+
+        .header-home__btn {
+          margin: 8px;
+          // margin-left: 11px;
+          padding: 12px 34px;
+          border: none;
+          border-radius: 5px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #fff;
+          background-color: #3885e5;
+        }
+      }
+
+      .header-home__more {
+        margin-top: 298px;
+
+        .header-more__description {
+          margin-bottom: 15px;
+        }
+
+        .header-more__btn {
+          margin-bottom: 44px;
+          background: transparent;
+          border: none;
+        }
       }
     }
+  }
 
-    .header-home__more {
-      margin-top: 298px;
+  .categories {
+    color: #9d9fa2;
+    border-bottom: 1px solid #d4d9de;
 
-      .header-more__description {
-        margin-bottom: 15px;
+    .categories__list {
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding-top: 31px;
+      padding-bottom: 29px;
+      color: #9d9fa2;
+      list-style-type: disc;
+      font-weight: 500;
+
+      .categories__li {
+        padding: 10px 15px;
+        padding-left: 30px;
+
+        &:hover {
+          // color: #3885e5;
+        }
+
+        .categories__link {
+          color: #9d9fa2;
+
+          &:hover {
+            color: #3885e5;
+          }
+        }
       }
 
-      .header-more__btn {
-        margin-bottom: 44px;
-        background: transparent;
-        border: none;
+      .categories__li--first {
+        padding-left: 15px;
+        list-style-type: none;
+      }
+
+      .categories__li--last {
+        padding: 10px 20px;
+        margin-left: 37px;
+        margin-right: 20px;
+        list-style-type: none;
+        border: 1px solid black;
+        border-radius: 4px;
       }
     }
   }

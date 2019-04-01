@@ -317,89 +317,121 @@ ul {
   padding: 0;
   list-style-type: none; }
 
-.header-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/bgc_header.png");
+body {
   font-size: 1.125rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  color: #fff; }
-  .header-container .header {
-    max-width: 1680px;
-    margin: 0 auto; }
-    .header-container .header .header-navbar {
+  font-family: "Raleway", sans-serif; }
+  body .header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/bgc_header.png");
+    font-weight: 300;
+    color: #fff; }
+    body .header-container .header {
+      max-width: 1680px;
+      margin: 0 auto; }
+      body .header-container .header .header-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px; }
+        body .header-container .header .header-navbar .header-navbar__title {
+          margin: 0;
+          padding: 0;
+          font-size: 1.8125rem;
+          font-weight: 500; }
+        body .header-container .header .header-navbar .header-navbar__nav {
+          display: flex; }
+          body .header-container .header .header-navbar .header-navbar__nav .header-navbar__link {
+            padding: 5px 27px;
+            color: #fff;
+            transition: 0.2s; }
+            body .header-container .header .header-navbar .header-navbar__nav .header-navbar__link:hover {
+              color: #aaa; }
+          body .header-container .header .header-navbar .header-navbar__nav .header-navbar__link--margin {
+            padding-right: 40px; }
+        body .header-container .header .header-navbar .header-login {
+          display: flex; }
+          body .header-container .header .header-navbar .header-login .header-login__login {
+            padding: 3px 41px;
+            color: #fff;
+            border-left: 1px solid white; }
+          body .header-container .header .header-navbar .header-login .header-login__register {
+            padding: 10px 24px;
+            color: #fff;
+            border: 1px solid white;
+            border-radius: 5px; }
+            body .header-container .header .header-navbar .header-login .header-login__register:hover {
+              border-color: #3885e5;
+              background-color: #3885e5; }
+      body .header-container .header .header-home {
+        margin-top: 282px;
+        text-align: center; }
+        body .header-container .header .header-home .header-home__title {
+          margin: 0;
+          font-size: 3rem; }
+        body .header-container .header .header-home .header-home__description {
+          margin-top: 18px;
+          margin-bottom: 40px; }
+      body .header-container .header .header-home__input {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 5px; }
+        body .header-container .header .header-home__input .header-home__search {
+          padding: 10px;
+          border: none;
+          padding: 0 137px 0 20px; }
+        body .header-container .header .header-home__input .header-home__icon {
+          color: #9d9fa1; }
+        body .header-container .header .header-home__input .header-home__select {
+          min-height: 60px;
+          margin-left: 16px;
+          padding: 0 73px 0 14px;
+          border: none;
+          border-left: 1px solid #9d9fa1;
+          border-right: 1px solid #9d9fa1; }
+        body .header-container .header .header-home__input .header-home__btn {
+          margin: 8px;
+          padding: 12px 34px;
+          border: none;
+          border-radius: 5px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #fff;
+          background-color: #3885e5; }
+      body .header-container .header .header-home__more {
+        margin-top: 298px; }
+        body .header-container .header .header-home__more .header-more__description {
+          margin-bottom: 15px; }
+        body .header-container .header .header-home__more .header-more__btn {
+          margin-bottom: 44px;
+          background: transparent;
+          border: none; }
+  body .categories {
+    color: #9d9fa2;
+    border-bottom: 1px solid #d4d9de; }
+    body .categories .categories__list {
+      max-width: 1200px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding-top: 25px; }
-      .header-container .header .header-navbar .header-navbar__title {
-        margin: 0;
-        padding: 0;
-        font-size: 1.8125rem;
-        font-weight: 500; }
-      .header-container .header .header-navbar .header-navbar__nav {
-        display: flex; }
-        .header-container .header .header-navbar .header-navbar__nav .header-navbar__link {
-          padding: 5px 27px;
-          color: #fff;
-          transition: 0.2s; }
-          .header-container .header .header-navbar .header-navbar__nav .header-navbar__link:hover {
-            color: #aaa; }
-        .header-container .header .header-navbar .header-navbar__nav .header-navbar__link--margin {
-          padding-right: 40px; }
-      .header-container .header .header-navbar .header-login {
-        display: flex; }
-        .header-container .header .header-navbar .header-login .header-login__login {
-          padding: 3px 41px;
-          color: #fff;
-          border-left: 1px solid white; }
-        .header-container .header .header-navbar .header-login .header-login__register {
-          padding: 10px 24px;
-          color: #fff;
-          border: 1px solid white;
-          border-radius: 5px; }
-          .header-container .header .header-navbar .header-login .header-login__register:hover {
-            border-color: #3885e5;
-            background-color: #3885e5; }
-    .header-container .header .header-home {
-      margin-top: 282px;
-      text-align: center; }
-      .header-container .header .header-home .header-home__title {
-        margin: 0;
-        font-size: 3rem; }
-      .header-container .header .header-home .header-home__description {
-        margin-top: 18px;
-        margin-bottom: 40px; }
-    .header-container .header .header-home__input {
-      display: inline-block;
-      background-color: #fff;
-      border-radius: 5px; }
-      .header-container .header .header-home__input .header-home__search {
-        padding: 10px;
-        border: none;
-        padding: 0 137px 0 20px; }
-      .header-container .header .header-home__input .header-home__icon {
-        color: #9d9fa1; }
-      .header-container .header .header-home__input .header-home__select {
-        min-height: 60px;
-        margin-left: 16px;
-        padding: 0 73px 0 14px;
-        border: none;
-        border-left: 1px solid #9d9fa1;
-        border-right: 1px solid #9d9fa1; }
-      .header-container .header .header-home__input .header-home__btn {
-        margin: 8px;
-        padding: 12px 34px;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        font-weight: 500;
-        color: #fff;
-        background-color: #3885e5; }
-    .header-container .header .header-home__more {
-      margin-top: 298px; }
-      .header-container .header .header-home__more .header-more__description {
-        margin-bottom: 15px; }
-      .header-container .header .header-home__more .header-more__btn {
-        margin-bottom: 44px;
-        background: transparent;
-        border: none; }
+      justify-content: space-between;
+      margin: 0 auto;
+      padding-top: 31px;
+      padding-bottom: 29px;
+      color: #9d9fa2;
+      list-style-type: disc;
+      font-weight: 500; }
+      body .categories .categories__list .categories__li {
+        padding: 10px 15px;
+        padding-left: 30px; }
+        body .categories .categories__list .categories__li .categories__link {
+          color: #9d9fa2; }
+          body .categories .categories__list .categories__li .categories__link:hover {
+            color: #3885e5; }
+      body .categories .categories__list .categories__li--first {
+        padding-left: 15px;
+        list-style-type: none; }
+      body .categories .categories__list .categories__li--last {
+        padding: 10px 20px;
+        margin-left: 37px;
+        margin-right: 20px;
+        list-style-type: none;
+        border: 1px solid black;
+        border-radius: 4px; }
