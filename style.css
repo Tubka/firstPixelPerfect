@@ -319,7 +319,10 @@ ul {
 
 body {
   font-size: 1.125rem;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box; }
+  body * {
+    box-sizing: inherit; }
   body .header-container {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/bgc_header.png");
     font-weight: 300;
@@ -443,6 +446,117 @@ body {
       font-weight: 500;
       margin-bottom: 32px; }
     body .job .job__description {
-      width: 970px;
+      max-width: 970px;
       margin: 0 auto;
       line-height: 1.7; }
+  body .important {
+    display: flex;
+    margin-top: 100px; }
+    body .important .important__description {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      background-color: #3885e5;
+      color: #fff; }
+      body .important .important__description .important__description-container {
+        padding-right: 115px;
+        max-width: 585px; }
+        body .important .important__description .important__description-container .important__title {
+          margin-top: 90px;
+          margin-bottom: 0;
+          max-width: 470px;
+          font-size: 2em;
+          font-weight: 300;
+          line-height: 1.3;
+          letter-spacing: 0.6px; }
+        body .important .important__description .important__description-container .important__paragraph {
+          max-width: 470px;
+          margin-top: 34px;
+          line-height: 1.7;
+          letter-spacing: 0.6px; }
+        body .important .important__description .important__description-container .important__btn {
+          margin-top: 70px;
+          margin-bottom: 95px;
+          padding: 15px 24px;
+          color: #fff;
+          background-color: transparent;
+          border: 1px solid #fff;
+          border-radius: 5px; }
+    body .important .important__video-container {
+      width: 50%; }
+      body .important .important__video-container .important__video {
+        width: 100%;
+        height: 100%; }
+  body .featured {
+    padding: 68px 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #4f5660; }
+    body .featured .featured__header {
+      width: 100%;
+      text-align: center;
+      font-size: 2em;
+      font-weight: 300; }
+    body .featured .featured__section {
+      width: 31%;
+      margin: 58px 0 0 0;
+      padding: 40px 0;
+      border: 1px solid grey;
+      opacity: 0.3; }
+      body .featured .featured__section .featured__container {
+        display: flex;
+        align-items: center; }
+        body .featured .featured__section .featured__container .featured__img {
+          padding-top: 10px; }
+        body .featured .featured__section .featured__container .featured__info {
+          margin-left: 12px; }
+          body .featured .featured__section .featured__container .featured__info .featured__title {
+            font-weight: 500;
+            font-size: 0.88em;
+            margin-top: 8px; }
+          body .featured .featured__section .featured__container .featured__info .featured__tinder {
+            color: #3885e5; }
+          body .featured .featured__section .featured__container .featured__info .featured__city {
+            padding-top: 15px;
+            font-size: 0.88em;
+            color: #9d9fa2; }
+      body .featured .featured__section .featured__description {
+        width: 84%;
+        margin: 0 auto;
+        margin-top: 37px;
+        margin-bottom: 26px;
+        line-height: 1.7; }
+      body .featured .featured__section .featured__btn {
+        margin-left: 8.2%;
+        font-weight: 700;
+        color: #3885e5; }
+    body .featured .featured__section--opacity {
+      opacity: 1; }
+  body .cite {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 19%;
+    padding-top: 70px;
+    padding: 70px 19% 100px 0;
+    font-size: 1.22em;
+    line-height: 1.7;
+    margin-top: 185px;
+    color: #fff;
+    background-color: #000; }
+    body .cite .cite__designer {
+      width: 670px; }
+      body .cite .cite__designer .cite__description {
+        margin-top: 30px; }
+      body .cite .cite__designer .cite__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 58px;
+        margin-right: 20px;
+        font-size: 0.82em;
+        line-height: 1.4; }
+      body .cite .cite__designer .cite__img-s {
+        margin-right: 28px; }
+      body .cite .cite__designer .cite__who {
+        color: #c5c5c5; }

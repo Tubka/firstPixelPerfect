@@ -1,76 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sarabanda</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sarabanda</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header class="header-container">
-    <section class="header">
-      <nav class="header-navbar">
-        <h1 class="header-navbar__title">Sarabanda</h1>
-        <ul class="header-navbar__nav">
-          <li class="header-navbar__li"><a class="header-navbar__link" href="#">Job offers</a></li>
-          <li class="header-navbar__li"><a class="header-navbar__link" href="#">Curriculum Vitae</a></li>
-          <li class="header-navbar__li">
-            <a class="header-navbar__link  header-navbar__link--margin" href="#">Post a job</a>
-          </li>
-          <ul class="header-login">
-            <li class="header-login__li">
-              <a class="header-login__login" href="#">Login</a></li>
-            <li class="header-login__li">
-              <a class="header-login__register" href="#">Register</a>
+  <body>
+    <header class="header-container">
+      <section class="header">
+        <nav class="header-navbar">
+          <h1 class="header-navbar__title">Sarabanda</h1>
+          <ul class="header-navbar__nav">
+            <li class="header-navbar__li">
+              <a class="header-navbar__link" href="#">Job offers</a>
             </li>
+            <li class="header-navbar__li">
+              <a class="header-navbar__link" href="#">Curriculum Vitae</a>
+            </li>
+            <li class="header-navbar__li">
+              <a
+                class="header-navbar__link  header-navbar__link--margin"
+                href="#"
+                >Post a job</a
+              >
+            </li>
+            <ul class="header-login">
+              <li class="header-login__li">
+                <a class="header-login__login" href="#">Login</a>
+              </li>
+              <li class="header-login__li">
+                <a class="header-login__register" href="#">Register</a>
+              </li>
+            </ul>
           </ul>
-        </ul>
-      </nav>
-      <section class="header-home">
-        <h1 class="header-home__title">Don't get stuck in a job you hate!</h1>
-        <p class="header-home__description">Do yourself a favor. Let's find a better one now!</p>
-        <section class="header-home__input">
-          <input class="header-home__search" type="text" placeholder="Search">
-          <span class="header-home__icon fas fa-search"></span>
-          <select class="header-home__select" name="Location">
-            <img class="header-home__img" alt="">
-            <option class="header-home__option" disabled="" selected="" value="">Location</option>
-            <option class="header-home__option">Toruń</option>
-            <option class="header-home__option">Bydgoszcz</option>
-          </select>
-          <button class="header-home__btn">Find a job</button>
-        </section>
-        <section class="header-home__more">
-          <p class="header-more__description">Learn more</p>
-          <button class="header-more__btn"><img class="header-more__img" src="img/mouse.png" alt=""></button>
+        </nav>
+        <section class="header-home">
+          <h1 class="header-home__title">Don't get stuck in a job you hate!</h1>
+          <p class="header-home__description">
+            Do yourself a favor. Let's find a better one now!
+          </p>
+          <section class="header-home__input">
+            <input
+              class="header-home__search"
+              type="text"
+              placeholder="Search"
+            />
+            <span class="header-home__icon fas fa-search"></span>
+            <select class="header-home__select" name="Location">
+              <img class="header-home__img" alt="" />
+              <option
+                class="header-home__option"
+                disabled=""
+                selected=""
+                value=""
+                >Location</option
+              >
+              <option class="header-home__option">Toruń</option>
+              <option class="header-home__option">Bydgoszcz</option>
+            </select>
+            <button class="header-home__btn">Find a job</button>
+          </section>
+          <section class="header-home__more">
+            <p class="header-more__description">Learn more</p>
+            <button class="header-more__btn">
+              <img class="header-more__img" src="img/mouse.png" alt="" />
+            </button>
+          </section>
         </section>
       </section>
+    </header>
+
+    <nav class="categories">
+      <ul class="categories__list">
+        <li class="categories__li categories__li--first">
+          <a class="categories__link" href="#">Banking</a>
+        </li>
+        <li class="categories__li">
+          <a class="categories__link" href="#">Marketing / PR</a>
+        </li>
+        <li class="categories__li">
+          <a class="categories__link" href="#">Education</a>
+        </li>
+        <li class="categories__li">
+          <a class="categories__link" href="#">Architecture</a>
+        </li>
+        <li class="categories__li">
+          <a class="categories__link" href="#">IT</a>
+        </li>
+        <li class="categories__li">
+          <a class="categories__link" href="#">Legal</a>
+        </li>
+        <li class="categories__li categories__li--last">
+          <a class="categories__link" href="#">All categories</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="job">
+      <h1 class="job__title">Why you need to change a job now?</h1>
+      <p class="job__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sed
+        possimus quos deleniti quas quis dolor, ut tempora ratione sequi. Quia
+        exercitationem delectus quod obcaecati officiis voluptas nulla earum
+        quis atque dolores cumque, repellendus, odio alias nemo incidunt. Minima
+        necessitatibus fugiat esse illum quisquam quasi quidem architecto, modi
+        officia aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+        possimus est nihil deleniti eligendi nisi! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Deleniti dignissimos ipsum optio pariatur
+        rem dolore, quis ratione natus ullam impedit!
+      </p>
     </section>
-  </header>
+    <section class="important">
+      <section class="important__description">
+        <section class="important__description-container">
+          <h1 class="important__title">
+            How important is it to love what you do?
+          </h1>
+          <p class="important__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip
+          </p>
+          <button class="important__btn">Learn more</button>
+        </section>
+      </section>
+      <section class="important__video-container">
+        <iframe
+          class="important__video"
+          src="https://www.youtube.com/watch?v=jq824hrfCuc"
+          frameborder="0"
+        ></iframe>
+      </section>
+    </section>
 
-  <nav class="categories">
-    <ul class="categories__list">
-      <li class="categories__li categories__li--first"><a class="categories__link" href="#">Banking</a></li>
-      <li class="categories__li"><a class="categories__link" href="#">Marketing / PR</a></li>
-      <li class="categories__li"><a class="categories__link" href="#">Education</a></li>
-      <li class="categories__li"><a class="categories__link" href="#">Architecture</a></li>
-      <li class="categories__li"><a class="categories__link" href="#">IT</a></li>
-      <li class="categories__li"><a class="categories__link" href="#">Legal</a></li>
-      <li class="categories__li categories__li--last"><a class="categories__link" href="#">All categories</a></li>
-    </ul>
-  </nav>
-  <section class="job">
-    <h1 class="job__title">Why you need to change a job now?</h1>
-    <p class="job__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur animi ipsam
-      voluptatem similique doloribus voluptate quia sit, saepe repellendus veritatis quibusdam, facere dolorum, id
-      mollitia beatae nostrum! Quo dolor suscipit quod cum amet itaque nisi deleniti ducimus omnis temporibus.</p>
-  </section>
-</body>
+    <section class="featured">
+      <h1 class="featured__header">Featured job offers</h1>
 
+      <section class="featured__section">
+        <div class="featured__container">
+          <img class="featured__img" src="img/fire.png" alt="" />
+          <div class="featured__info">
+            <h2 class="featured__title">Senior Product Designer</h2>
+            <p class="featured__tinder">Tinder</p>
+            <p class="featured__city">California, USA</p>
+          </div>
+        </div>
+        <p class="featured__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          voluptatibus molestias sequi nihil corrupti iste magnam blanditiis
+          velit laborum aperiam, deleniti.
+        </p>
+        <a class="featured__btn" href="#">Read more</a>
+      </section>
+      <section class="featured__section featured__section--opacity">
+        <div class="featured__container">
+          <img class="featured__img" src="img/fire.png" alt="" />
+          <div class="featured__info">
+            <h2 class="featured__title">Senior Product Designer</h2>
+            <p class="featured__tinder">Tinder</p>
+            <p class="featured__city">California, USA</p>
+          </div>
+        </div>
+        <p class="featured__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          voluptatibus molestias sequi nihil corrupti iste magnam blanditiis
+          velit laborum aperiam, deleniti.
+        </p>
+        <a class="featured__btn" href="#">Read more</a>
+      </section>
+      <section class="featured__section">
+        <div class="featured__container">
+          <img class="featured__img" src="img/fire.png" alt="" />
+          <div class="featured__info">
+            <h2 class="featured__title">Senior Product Designer</h2>
+            <p class="featured__tinder">Tinder</p>
+            <p class="featured__city">California, USA</p>
+          </div>
+        </div>
+        <p class="featured__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          voluptatibus molestias sequi nihil corrupti iste magnam blanditiis
+          velit laborum aperiam, deleniti.
+        </p>
+        <a class="featured__btn" href="#">Read more</a>
+      </section>
+    </section>
+    <section class="cite">
+      <section class="cite__designer">
+        <img class="cite__img-cite" src="img/cite.png" alt="" />
+        <p class="cite__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <div class="cite__container">
+          <img class="cite__img-s" src="img/s.png" alt="" />
+          <div class="cite__signature">
+            <p class="cite__name">Jakub Kowalczyk</p>
+            <p class="cite__who">Product Designer at Symu.co</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
