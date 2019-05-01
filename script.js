@@ -15,4 +15,21 @@ const init = () => {
   setInterval(changeOpacity, 5000);
 }
 
+$(".header__button").on('click', function() {
+  $('.header-navbar__nav').toggleClass('header-navbar__nav--visible');
+})
+
 init();
+
+// let first = 0;
+// let secound = 1;
+// let number;
+
+// const fibanocci = () => {
+//   number = first + secound;
+//   console.log(number);
+//   first = secound;
+//   secound = number;
+// }
+
+// setInterval(fibanocci, 2000);

@@ -10,6 +10,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 </head>
 
 <body>
@@ -25,10 +26,7 @@
             <a class="header-navbar__link" href="#">Curriculum Vitae</a>
           </li>
           <li class="header-navbar__li">
-            <a
-                class="header-navbar__link  header-navbar__link--margin"
-                href="#"
-                >Post a job</a>
+            <a class="header-navbar__link  header-navbar__link--margin" href="#">Post a job</a>
           </li>
           <ul class="header-login">
             <li class="header-login__li">
@@ -39,6 +37,11 @@
             </li>
           </ul>
         </ul>
+        <div class="header__button">
+          <div class="header__line header__line--first"></div>
+          <div class="header__line header__line--middle"></div>
+          <div class="header__line header__line--last"></div>
+        </div>
       </nav>
       <section class="header-home">
         <h1 class="header-home__title">Don't get stuck in a job you hate!</h1>
@@ -46,8 +49,11 @@
           Do yourself a favor. Let's find a better one now!
         </p>
         <section class="header-home__input">
+           <div class="header-home__container">
           <input class="header-home__search" type="text" placeholder="Search" />
           <span class="header-home__icon fas fa-search"></span>
+         </div>
+         <div class="header-home__container">
           <select class="header-home__select" name="Location">
             <img class="header-home__img" alt="" />
             <option class="header-home__option" disabled="" selected="" value="">Location</option>
@@ -55,6 +61,7 @@
             <option class="header-home__option">Bydgoszcz</option>
           </select>
           <button class="header-home__btn">Find a job</button>
+         </div>
         </section>
         <section class="header-home__more">
           <p class="header-more__description">Learn more</p>
@@ -71,18 +78,24 @@
       <li class="categories__li categories__li--first">
         <a class="categories__link" href="#">Banking</a>
       </li>
+            <li class="categories__li categories__dott"></li>
+      </li>
       <li class="categories__li">
         <a class="categories__link" href="#">Marketing / PR</a>
       </li>
-      <li class="categories__li">
-        <a class="categories__link" href="#">Education</a>
-      </li>
+      <li class="categories__li categories__dott"></li>
+        <li class="categories__li">
+          <a class="categories__link" href="#">Education</a>
+        </li>
+      <li class="categories__li categories__dott"></li>
       <li class="categories__li">
         <a class="categories__link" href="#">Architecture</a>
       </li>
+      <li class="categories__li categories__dott"></li>
       <li class="categories__li">
         <a class="categories__link" href="#">IT</a>
       </li>
+      <li class="categories__li categories__dott"></li>
       <li class="categories__li">
         <a class="categories__link" href="#">Legal</a>
       </li>

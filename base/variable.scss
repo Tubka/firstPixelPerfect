@@ -1,0 +1,7 @@
+$large-width: 990px;
+
+@mixin large {
+    @media (max-width: #{$large-width}) {
+      @content;
+    }
+  }
