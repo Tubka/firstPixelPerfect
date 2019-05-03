@@ -631,7 +631,7 @@ body {
           height: 540px; } }
       @media (max-width: 630px) {
         body .important .important__video-container {
-          height: 300px; } }
+          height: 400px; } }
       body .important .important__video-container .important__video {
         width: 100%;
         height: 100%; }
@@ -704,6 +704,9 @@ body {
     background: url("img/man.png"), #000;
     background-repeat: no-repeat;
     background-position: 10% 28%; }
+    @media (max-width: 630px) {
+      body .cite {
+        background-position: 20% 28%; } }
     body .cite .cite__designer {
       padding-left: 20px;
       width: 670px; }

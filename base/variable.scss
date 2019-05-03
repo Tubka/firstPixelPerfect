@@ -7,7 +7,7 @@ $medium-width: 630px;
   }
 }
 
-@mixin medium {
+@mixin small {
   @media (max-width: #{$medium-width}) {
     @content;
   }
